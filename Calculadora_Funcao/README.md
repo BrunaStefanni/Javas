@@ -1,0 +1,1 @@
+Programa com calculadora de simples operadores: + | - | * | / |
