@@ -1,0 +1,1 @@
+Programa simples para somar números.
