@@ -4,7 +4,7 @@ public class account_bank { // Class para Contas Bancárias
     private double balance; // guarda o saldo
     private int transactionCount; // conta o nr de depósitos e levantamentos
 
-}
+
 
 // Construtor com saldo inicial igual a zero
 public account_bank(String owner) { // construtor 
@@ -58,3 +58,4 @@ public void show() { // médoto para mostrar o nome do titular, saldo e moviment
 
 }
 
+}
