@@ -50,7 +50,7 @@ public boolean transfer(account_bank target, double amount) { // método de tran
 }
 
 public void show() { // médoto para mostrar o nome do titular, saldo e movimentações de conta.
-    System.out.println("===ACCOUNT BANK===");
+    System.out.println("=== ACCOUNT BANK ===");
     System.out.println("Titular: " + owner);
     System.out.println("Saldo: " + balance + " €");
     System.out.println("Movimentos: " + transactionCount);
