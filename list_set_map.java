@@ -78,15 +78,43 @@ Classe: HashMap
 Justificação: Queremos associar cada aluno ao seu número de faltas. O nome ou número do 
 aluno funciona como chave, e o número de faltas como valor.
 
+    Número de faltas de cada aluno
+        Map<String, Integer> faltas = new HashMap<>();
+        faltas.put("Ana", 2);
+        faltas.put("Pedro", 4);
+        faltas.put("Maria", 1);
+
+        System.out.println("6. Faltas da Ana: " + faltas.get("Ana"));
+
 7. As palavras de um dicionário, por ordem alfabética e sem repetições
 Estrutura: Set
 Classe: TreeSet
 Justificação: Precisamos de guardar palavras sem repetições e por ordem alfabética. 
 O TreeSet organiza os elementos automaticamente.
 
+    Palavras por ordem alfabética e sem repetições
+        Set<String> palavras = new TreeSet<>();
+        palavras.add("Banana");
+        palavras.add("Abacate");
+        palavras.add("Maçã");
+        palavras.add("Banana"); // Não será repetida
+
+        System.out.println("7. Palavras: " + palavras);
+
 8. Senhas de atendimento: o primeiro a chegar é o primeiro a ser atendido
 Estrutura: Queue
 Classe: ArrayDeque
 Justificação: Precisamos de respeitar a ordem de chegada: a primeira senha a entrar é 
 a primeira a sair. É o comportamento FIFO (First In, First Out).
+
+    Senhas de atendimento: primeiro a chegar,
+        // primeiro a ser atendido
+        Queue<Integer> senhas = new ArrayDeque<>();
+        senhas.offer(101);
+        senhas.offer(102);
+        senhas.offer(103);
+
+        System.out.println("8. Próxima senha: " + senhas.poll());
+        System.out.println("Senhas restantes: " + senhas);
+
 */
