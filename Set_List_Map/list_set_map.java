@@ -1,3 +1,4 @@
+package Set_List_Map;
 /* Exercício 1 — Que estrutura usar?
 
 1. Os nomes dos alunos pela ordem de inscrição
@@ -6,7 +7,7 @@ Classe: ArrayList
 Justificação: Queremos manter a ordem de inscrição dos alunos. Uma lista permite 
 manter a ordem e ter elementos repetidos, se necessário. */
 
-    Nomes dos alunos pela ordem de inscrição
+    //Nomes dos alunos pela ordem de inscrição
         List<String> alunos = new ArrayList<>();
         alunos.add("Ana");
         alunos.add("Pedro");
@@ -21,7 +22,7 @@ Classe: HashSet
 Justificação: Queremos guardar códigos postais sem repetições. Um conjunto 
 (Set) não permite elementos duplicados. */
 
-    Códigos postais diferentes dos clientes
+    //Códigos postais diferentes dos clientes
         Set<String> codigosPostais = new HashSet<>();
         codigosPostais.add("2400-100");
         codigosPostais.add("3000-200");
@@ -35,7 +36,7 @@ Classe: HashMap
 Justificação: Queremos procurar o preço através do código do produto. Um mapa (Map) 
 permite associar uma chave (código) a um valor (preço). */
 
-    Preço de cada produto, procurado pelo código
+    //Preço de cada produto, procurado pelo código
         Map<String, Double> produtos = new HashMap<>();
         produtos.put("P001", 10.50);
         produtos.put("P002", 25.99);
@@ -49,7 +50,7 @@ Classe: ArrayList
 Justificação: Precisamos de guardar todas as jogadas pela ordem em que aconteceram, 
 incluindo jogadas repetidas.*/
 
-    Histórico de jogadas, incluindo repetidas
+    //Histórico de jogadas, incluindo repetidas
         List<String> jogadas = new ArrayList<>();
         jogadas.add("Avançar");
         jogadas.add("Saltar");
@@ -63,7 +64,7 @@ Classe: HashSet
 Justificação: Queremos guardar os países sem repetições, porque visitar o mesmo país 
 várias vezes não significa que seja necessário guardá-lo mais do que uma vez. */
 
-    Países que uma pessoa já visitou
+    //Países que uma pessoa já visitou
         Set<String> paises = new HashSet<>();
         paises.add("Portugal");
         paises.add("Espanha");
@@ -78,7 +79,7 @@ Classe: HashMap
 Justificação: Queremos associar cada aluno ao seu número de faltas. O nome ou número do 
 aluno funciona como chave, e o número de faltas como valor. */
 
-    Número de faltas de cada aluno
+    //Número de faltas de cada aluno
         Map<String, Integer> faltas = new HashMap<>();
         faltas.put("Ana", 2);
         faltas.put("Pedro", 4);
@@ -92,7 +93,7 @@ Classe: TreeSet
 Justificação: Precisamos de guardar palavras sem repetições e por ordem alfabética. 
 O TreeSet organiza os elementos automaticamente. */
 
-    Palavras por ordem alfabética e sem repetições
+    //Palavras por ordem alfabética e sem repetições
         Set<String> palavras = new TreeSet<>();
         palavras.add("Banana");
         palavras.add("Abacate");
@@ -107,7 +108,7 @@ Classe: ArrayDeque
 Justificação: Precisamos de respeitar a ordem de chegada: a primeira senha a entrar é 
 a primeira a sair. É o comportamento FIFO (First In, First Out). */
 
-    Senhas de atendimento: primeiro a chegar,
+    //Senhas de atendimento: primeiro a chegar,
         // primeiro a ser atendido
         Queue<Integer> senhas = new ArrayDeque<>();
         senhas.offer(101);
