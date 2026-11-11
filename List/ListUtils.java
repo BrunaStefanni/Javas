@@ -1,4 +1,4 @@
-import java.util.List;
+import java.util.List; // não roda nesta pasta, preferencialmente executar em outro repositório
 
 public class ListUtils {
 
