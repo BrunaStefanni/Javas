@@ -1,0 +1,1 @@
+Exercícios corrigidos, API's
